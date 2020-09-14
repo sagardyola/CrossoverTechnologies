@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CrossoverTechnologies.DAL;
+using CrossoverTechnologies.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +10,7 @@ namespace CrossoverTechnologies.Controllers
 {
     public class HomeController : Controller
     {
+        private CrossoverDbContext db = new CrossoverDbContext();
         public ActionResult Index()
         {
             return View();
@@ -17,6 +20,11 @@ namespace CrossoverTechnologies.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
+            Customer customerObj = new Customer();
+            customerObj.Name = "Sagar NEW";
+            customerObj.Email = "sagar@mail.com";
+            db.Customers.Add(customerObj);
+            db.SaveChanges();
             return View();
         }
 

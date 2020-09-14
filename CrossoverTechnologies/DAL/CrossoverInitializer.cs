@@ -12,8 +12,8 @@ namespace CrossoverTechnologies.DAL
         {
             var customerObj = new List<Customer>
             {
-                new Customer{ Name = "Admin"},
-                new Customer{ Name = "User"}
+                new Customer{ Name = "Admin", Email="admin@mail.com"},
+                new Customer{ Name = "User", Email="user@mail.com"}
             };
             customerObj.ForEach(s => context.Customers.Add(s));
             context.SaveChanges();
