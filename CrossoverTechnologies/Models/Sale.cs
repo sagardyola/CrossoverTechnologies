@@ -28,10 +28,10 @@ namespace CrossoverTechnologies.Models
         }
 
         [Display(Name = "Net Total")]
-        public Single? NetTotal { get; set; }
+        public float NetTotal { get; set; }
 
         [Display(Name = "Gross Total")]
-        public Single? GrossTotal { get; set; }
+        public float GrossTotal { get; set; }
 
         public int CustomerID { get; set; }
 

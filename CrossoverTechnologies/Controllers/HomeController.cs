@@ -18,7 +18,6 @@ namespace CrossoverTechnologies.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
 
             Customer customerObj = new Customer();
             customerObj.Name = "Sagar NEW";
@@ -28,9 +27,8 @@ namespace CrossoverTechnologies.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ListSales()
         {
-            ViewBag.Message = "Your contact page.";
 
             return View();
         }

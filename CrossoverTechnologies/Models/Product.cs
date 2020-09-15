@@ -20,13 +20,13 @@ namespace CrossoverTechnologies.Models
         public string SKU { get; set; }
 
         [Display(Name = "Price")]
-        public Single? Price { get; set; }
+        public float Price { get; set; }
 
         [Display(Name = "Cost Price")]
-        public Single? CostPrice { get; set; }
+        public float CostPrice { get; set; }
 
         [Display(Name = "VAT")]
-        public Single? VAT { get; set; }
+        public float VAT { get; set; }
 
         [Display(Name = "Stock Level")]
         [Required(ErrorMessage = "Please enter Stock level")]

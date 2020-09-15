@@ -9,7 +9,7 @@ namespace CrossoverTechnologies.Models
     public class Customer
     {
         [Key]
-        public int CID { get; set; }
+        public int CustomerID { get; set; }
 
         [Display(Name = "Name")]
         [Required(ErrorMessage = "Please enter a name.")]
